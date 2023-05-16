@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { copy, linkIcon, loader, tick } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
 
+import PdfUpload from './PdfUpload';
+
+
 const Demo = () => {
   const [article, setArticle] = useState({
     url: "",
@@ -41,6 +44,10 @@ const Demo = () => {
  }
   return (
     <section className="mt-16 w-full max-w-xl">
+         <div>
+        <PdfUpload />
+        {/* The rest of your component */}
+    </div>
       <div className="flex flex-col w-full gap-2">
         <form
           className="relative flex justfiy-center items-center"
