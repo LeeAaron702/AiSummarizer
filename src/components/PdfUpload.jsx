@@ -1,16 +1,17 @@
-// src/components/PdfUpload.js
-
 import React, { useState } from 'react';
-import { Document } from 'pdfjs-dist';
 import { pdfjs } from 'react-pdf';
+import { loader } from "../assets";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const PdfUpload = ({ onPdfParsed }) => {
-    const [pdfText, setPdfText] = useState('');
+    const [file, setFile] = useState(null);
 
-    const handleUpload = async (event) => {
-        const file = event.target.files[0];
+    const handleFileChange = (event) => {
+        setFile(event.target.files[0]);
+    };
+
+    const handleUpload = async () => {
         if (file) {
             const reader = new FileReader();
             reader.onload = async (event) => {
@@ -23,7 +24,7 @@ const PdfUpload = ({ onPdfParsed }) => {
                     text += content.items.map(item => item.str).join(' ') + '\n';
                 }
 
-                setPdfText(text);
+                onPdfParsed(text);
             };
             reader.readAsArrayBuffer(file);
         }
@@ -31,11 +32,12 @@ const PdfUpload = ({ onPdfParsed }) => {
 
     return (
         <div>
-            <input type="file" accept="application/pdf" onChange={handleUpload} />
-            <pre>{pdfText}</pre>
+            <input type="file" accept="application/pdf" onChange={handleFileChange} />
+            <button onClick={handleUpload}>
+                Submit
+            </button>
         </div>
     );
 };
 
 export default PdfUpload;
-

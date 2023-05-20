@@ -15,11 +15,11 @@ const Hero = () => {
     </nav>
 
     <h1 className="head_text"> 
-    Summerize Web Articles with <br className="max-md:hidden"/>
+    Summarize Web Articles with <br className="max-md:hidden"/>
     <span className="blue_gradient">OpenAI GPT</span>
     </h1>
     <h2 className="desc">
-      Simplify your reading with Summerize, an article summerizer that transforms lengthy articles into clear and concise summaries
+      Simplify your reading with summarize, an article summarizer that transforms lengthy articles into clear and concise summaries
     </h2>
   </header>
   )
