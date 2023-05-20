@@ -37,12 +37,12 @@ The codebase is structured as follows:
 - src/index.js: Entry point of the application, rendering the root component into the DOM.
 
 ## Usage
-Open the application in your web browser.
-Enter the URL of the article you want to summarize in the provided input field.
-Click the "Submit" button to fetch and display the summary of the article.
-Optionally, you can upload a PDF file using the "Upload PDF" button in the PdfUpload section. The extracted text will be displayed, and you can copy it to the clipboard.
-The application keeps track of previously summarized articles, which are displayed in the history section. You can click on a link to view the summary again.
-Summaries are stored in the browser's localStorage, allowing them to persist across page reloads.
+- Open the application in your web browser.
+- Enter the URL of the article you want to summarize in the provided input field.
+- Click the "Submit" button to fetch and display the summary of the article.
+- Optionally, you can upload a PDF file using the "Upload PDF" button in the PdfUpload section. The extracted text will be displayed, and you can copy it to the clipboard.
+- The application keeps track of previously summarized articles, which are displayed in the history section. You can click on a link to view the summary again.
+- Summaries are stored in the browser's localStorage, allowing them to persist across page reloads.
 
 
 ## License
