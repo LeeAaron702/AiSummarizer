@@ -21,7 +21,7 @@ const Hero = () => {
     <h2 className="desc">
       Simplify your reading with SwiftSummary, an article summarizer that transforms lengthy articles into clear and concise summaries
     </h2>
-    <h3 className="desc">Pdf parsing and summarizing ability coming soon!</h3>
+    <h3 className="desc">Pdf parsing available, summarizing ability coming soon!</h3>
   </header>
   )
 };
