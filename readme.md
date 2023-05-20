@@ -30,11 +30,11 @@ The application will be accessible at http://localhost:3000.
 ## Code Structure
 The codebase is structured as follows:
 
-src/components/Demo.jsx: React component that handles the article summarization functionality. It includes form submission, fetching summaries from the API, storing articles in localStorage, and displaying the results.
-src/components/Hero.jsx: React component that displays the header section of the application, including the logo, GitHub button, and introductory text.
-src/components/PdfUpload.jsx: React component for uploading PDF files, parsing the text content, and displaying the extracted text. It also provides the option to copy the extracted text to the clipboard.
-src/services/article.js: Service file that defines the API endpoint for fetching article summaries using OpenAI GPT.
-src/index.js: Entry point of the application, rendering the root component into the DOM.
+- src/components/Demo.jsx: React component that handles the article summarization functionality. It includes form submission, fetching summaries from the API, storing articles in localStorage, and displaying the results.
+- src/components/Hero.jsx: React component that displays the header section of the application, including the logo, GitHub button, and introductory text.
+- src/components/PdfUpload.jsx: React component for uploading PDF files, parsing the text content, and displaying the extracted text. It also provides the option to copy the extracted text to the clipboard.
+- src/services/article.js: Service file that defines the API endpoint for fetching article summaries using OpenAI GPT.
+- src/index.js: Entry point of the application, rendering the root component into the DOM.
 
 ## Usage
 Open the application in your web browser.
