@@ -15,8 +15,9 @@ Clone the repository.
 ```
 git clone https://github.com/LeeAaron702/AiSummarizer
 ```
-Install the dependencies.
+Navigate to the project directory and install the dependencies.
 ```
+cd AiSummarizer
 npm install
 ```
 
