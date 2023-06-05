@@ -1,4 +1,5 @@
 # SwiftSummary
+![SwiftSummary (online-video-cutter com)](https://github.com/LeeAaron702/AiSummarizer/assets/112150883/f23b126b-0874-4ca9-a742-f877165a9ed3)
 
 SwiftSummary is a web application that allows users to summarize articles using OpenAI GPT. It provides a simplified reading experience by transforming lengthy articles into clear and concise summaries. The application also supports PDF parsing, with summarizing ability coming soon.
 
